@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        
+        primary:"#95D4D9"
       },
       borderRadius: {
         lg: "var(--radius)",

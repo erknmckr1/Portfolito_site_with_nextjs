@@ -36,13 +36,22 @@
 
 
       /* light */
-    --background-light: #ffffff;
+    --background-light: #F9FBD6;
     --text-light: #333333;
     --accent-light: #007bff;
     
     /* Dark Theme Variables */
     --background-dark: #333333;
     --text-dark: #ffffff;
+    --accent-dark: #1abc9c;
+
+    /* header theme  */
+    --background-lheader:#ffffff;
+    --text-lheader:#333333;
+    --accent-light: #007bff;
+    /*  */
+    --background-dheader: #333333;
+    --text-dheader: #ffffff;
     --accent-dark: #1abc9c;
   }
   
@@ -90,6 +99,18 @@
   color: var(--text-dark);
   /* Diğer stiller */
  }
+
+
+
+ .title{
+  @apply text-[50px] xl:text-[70px] font-bold tracking-wider
+ }
+
+ 
+
+  .progress{
+    @apply fixed top-0 left-0 right-0 h-[10px] bg-primary z-50 
+  } 
 }
 
 
