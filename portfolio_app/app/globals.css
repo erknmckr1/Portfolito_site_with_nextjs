@@ -45,14 +45,8 @@
     --text-dark: #ffffff;
     --accent-dark: #1abc9c;
 
-    /* header theme  */
-    --background-lheader:#ffffff;
-    --text-lheader:#333333;
-    --accent-light: #007bff;
-    /*  */
-    --background-dheader: #333333;
-    --text-dheader: #ffffff;
-    --accent-dark: #1abc9c;
+    /* toggle theme dark mode  */
+
   }
   
 
@@ -97,7 +91,14 @@
  .dark-mode {
   background-color: var(--background-dark);
   color: var(--text-dark);
-  /* Diğer stiller */
+
+  /* toogle btn theme mode */
+  .themeToggleDark{
+    @apply bg-secondary text-white
+  }
+  .themeToggleLight{
+    @apply bg-primary text-black
+  }
  }
 
 
@@ -106,11 +107,9 @@
   @apply text-[50px] xl:text-[70px] font-bold tracking-wider
  }
 
- 
-
   .progress{
     @apply fixed top-0 left-0 right-0 h-[10px] bg-primary z-50 
-  } 
+  }
 }
 
 

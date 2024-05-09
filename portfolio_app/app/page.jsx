@@ -12,7 +12,7 @@ export default function Home() {
   const theme = useSelector(state => state.portfolio.theme)
   const { scrollYProgress } = useScroll();
   return (
-    <main className={`h-[4000px] ${theme}`}>
+    <main className={`h-[4000px] ${theme} transition-all duration-500`}>
        <motion.div
         className="progress"
         style={{ scaleX: scrollYProgress }}
